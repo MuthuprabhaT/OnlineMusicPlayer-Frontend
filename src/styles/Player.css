@@ -1,0 +1,60 @@
+.audio-player {
+  background-color: black;
+  color: white;
+  border-top: 1px solid #e9ecef;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.song-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.song-info h6,
+.song-info p {
+  margin: 0;
+}
+
+.controls button {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+.volume-control {
+  color: #343a40;
+}
+
+.volume-control input[type="range"] {
+  max-width: 100px;
+}
+/* AudioPlayer.css */
+
+.song-seek-slider {
+  top: 0; /* Position at the bottom of the audio player */
+  height: 5px; /* Set the height of the slider */
+  background-color: #ccc; /* Set the background color of the slider track */
+  -webkit-appearance: none; /* Remove default styles */
+  appearance: none;
+  outline: none; /* Remove outline */
+  border-radius: 0; /* Ensure no border-radius */
+}
+
+.song-seek-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styles */
+  appearance: none;
+  width: 10px; /* Set the width of the slider thumb */
+  height: 10px; /* Set the height of the slider thumb */
+  background-color: #333; /* Set the color of the slider thumb */
+  border-radius: 50%; /* Create a circular slider thumb */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+.seek-slider {
+  width: 300px;
+  margin: 10px 0;
+}

@@ -35,7 +35,7 @@ const ForgotPassword = () => {
       dispatch(HideLoading());
 
       if (response.data.success) {
-        toast.success("Password reset link sent to your email", {
+        toast.success("Passworddddddddddddddd reset link sent to your email", {
           position: "top-right",
           autoClose: 1500,
           hideProgressBar: false,

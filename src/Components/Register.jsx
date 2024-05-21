@@ -73,7 +73,6 @@ const Register = () => {
         });
       }
     } catch (error) {
-      console.log("Error response:", error.response.data);
       console.log("Error:", error.response.data.message);
       dispatch(SetError(error.response.data.message));
       toast.error("Something went wrong", {

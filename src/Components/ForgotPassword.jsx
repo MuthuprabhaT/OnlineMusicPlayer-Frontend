@@ -21,7 +21,6 @@ const ForgotPassword = () => {
   });
 
   const sendDataToMail = async (values) => {
-    console.log("Clicked");
     try {
       dispatch(ShowLoading());
       console.log("VAlues:", values);
@@ -31,11 +30,10 @@ const ForgotPassword = () => {
         values
       );
 
-      console.log("Response:", response);
       dispatch(HideLoading());
 
       if (response.data.success) {
-        toast.success("Passworddddddddddddddd reset link sent to your email", {
+        toast.success(response.data.message, {
           position: "top-right",
           autoClose: 1500,
           hideProgressBar: false,
@@ -46,7 +44,6 @@ const ForgotPassword = () => {
           theme: "colored",
         });
       } else {
-        console.log("Else Error:", response.data);
         toast.error(response.data.message, {
           position: "top-right",
           autoClose: 1500,
@@ -59,7 +56,6 @@ const ForgotPassword = () => {
         });
       }
     } catch (error) {
-      console.log("Error response:", error.response.data);
       console.log("Error:", error.response.data.message);
       dispatch(SetError(error.response.data.message));
       toast.error("Something went wrong", {

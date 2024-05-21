@@ -37,12 +37,9 @@ const ResetPassword = () => {
         values
       );
 
-      console.log("Response:", response);
       dispatch(HideLoading());
-      console.log("navigate outside if", response);
 
       if (response.data.success) {
-        console.log("Inside if loop", response);
         toast.success(response.data.message, {
           position: "top-right",
           autoClose: 1500,
@@ -69,7 +66,6 @@ const ResetPassword = () => {
         });
       }
     } catch (error) {
-      console.log("Error response:", error.response.data);
       console.log("Error:", error.response.data.message);
       dispatch(SetError(error.response.data.message));
       toast.error("Something went wrong", {

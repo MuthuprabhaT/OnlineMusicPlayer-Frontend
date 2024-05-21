@@ -100,8 +100,8 @@ const ResetPassword = () => {
         <div className="col-xl-5 col-md-6 col-sm 12">
           <div className="card bg-dark">
             <div className="card-body">
-              <h2 className="card-title">Reset Password</h2>
-              <form onSubmit={formik.handleSubmit}>
+              <h2 className="card-title text-white">Reset Password</h2>
+              <form className="text-white" onSubmit={formik.handleSubmit}>
                 <div className="my-1">
                   <label htmlFor="password">Password</label>
                   <input

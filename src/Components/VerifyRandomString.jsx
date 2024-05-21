@@ -74,9 +74,9 @@ const VerifyRandomString = () => {
         <div className="col-xl-5 col-md-6 col-sm 12">
           <div className="card bg-dark">
             <div className="card-body">
-              <h2 className="card-title">Verify Random String</h2>
+              <h2 className="card-title text-white">Verify Random String</h2>
 
-              <p className="mt-3">{verificationStatus}</p>
+              <p className="mt-3 text-white">{verificationStatus}</p>
               {verificationStatus === "Random String Verified" && (
                 <button
                   className="btn-primary p-3 rounded-5 text-center mt-3 w-100"
